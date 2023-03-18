@@ -7,7 +7,7 @@
  *
  * Return: Always 0 (Success)
  */
-itn main(void)
+int main(void)
 {
 	int d, p;
 
