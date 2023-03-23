@@ -16,7 +16,7 @@ void more_numbers(void)
 	{
 		for (a = 0; a <= 14; a++)
 		{
-			if (y > 9)
+			if (a <= 9)
 			{
 				putchar(a + 'a');
 			}
