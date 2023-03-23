@@ -18,11 +18,12 @@ void more_numbers(void)
 		{
 			if (a <= 9)
 			{
-				putchar(a + 'a');
+				putchar(a + '0');
 			}
 			else
 			{
 				putchar((a / 10) + '0');
+			}
 		}
 		putchar('\n');
 	}
