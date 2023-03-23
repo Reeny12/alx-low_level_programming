@@ -9,22 +9,18 @@
 
 void more_numbers(void)
 {
-	int a;
-	int i;
+	int x, y;
 
-	for (i = 0; i < 10; i++)
+	for (x = 0; x < 10; x++)
 	{
-		for (a = 0; a <= 14; a++)
-		{
-			if (a <= 9)
-			{
-				putchar(a + '0');
-			}
-			else
-			{
-				putchar((a / 10) + '0');
-			}
-		}
-		putchar('\n');
+	for (y = 0; y <= 14; y++)
+	{
+	if (y > 9)
+	{
+	putchar((y / 10) + '0');
+	}
+	putchar((y % 10) + '0');
+	}
+	putchar('\n');
 	}
 }
