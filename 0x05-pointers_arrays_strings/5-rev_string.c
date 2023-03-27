@@ -1,27 +1,26 @@
 #include "main.h"
 
 /**
- * rev_string - a function that updates a
+ * puts_half - a function that updates a
  * pointer to 98
- * @s: input
- * Return: s
+ * @str: input
+ * Return: n
  */
 
-void rev_string(char *s)
+void puts_half(char *str)
 {
-	char rev = s[0];
-	int counter = 0;
-	int i;
+	int len = 0, index = 0;
+	char tmp;
 
-	while (s[counter] != '\0')
+	while (s[index++])
 	{
-		counter++;
-		for (i = 0; i < counter; i++)
+		len++;
+
+		for (index = len - 1; index >= len / 2; index--)
 		{
-			counter--;
-			rev = s[i];
-			s[i] = s[counter];
-			s[counter] = rev;
+			tmp = s[index];
+			s[index] = s[len - index -1];
+			s[len - index - 1] = tmp;
 		}
 	}
 }
