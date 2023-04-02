@@ -9,12 +9,13 @@
  */
 int main(void)
 {
-	int n;
-	int m;
+	int n = 48;
+	int m = 97;
 
-	for (n = 48; n <= 57; n++)
+	while (n < 58)
 	{
 		putchar(n);
+		n++;
 	}
 	for (m = 97; m <= 102; m++)
 	{
