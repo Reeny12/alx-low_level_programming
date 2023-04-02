@@ -3,41 +3,41 @@
 
 /**
  * print_to_98 - entry point
- * @n: Returns the sign of a number
+ * @a: Returns the sign of a number
  * Return: void
  */
 
-void print_to_98(int n)
+void print_to_98(int a)
 {
-	if (n <= 98)
+	if (a <= 'b')
 	{
-	for (; n <= 98; n++)
+	for (; a <= 'b'; a++)
 	{
-	if (n == 98)
+	if (a == 'b')
 	{
-	printf("%d", n);
+	printf("%d", a);
 	printf("\n");
 	break;
 	}
 	else
 	{
-	printf("%d, ", n);
+	printf("%d, ", a);
 	}
 	}
 	}
 	else
 	{
-	for (; n >= 98; n--)
+	for (; a >= 'b'; n--)
 	{
-	if (n == 98)
+	if (a == 'b')
 	{
-	printf("%d", n);
+	printf("%d", a);
 	printf("\n");
 	break;
 	}
 	else
 	{
-	printf("%d, ", n);
+	printf("%d, ", a);
 	}
 	}
 	}
