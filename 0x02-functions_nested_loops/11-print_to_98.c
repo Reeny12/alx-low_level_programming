@@ -27,7 +27,7 @@ void print_to_98(int a)
 	}
 	else
 	{
-	for (; a >= 'b'; n--)
+	for (; a >= 'b'; a--)
 	{
 	if (a == 'b')
 	{
