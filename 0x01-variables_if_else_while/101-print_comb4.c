@@ -19,11 +19,11 @@ int main(void)
 			{
 				if ((b != a) != q)
 				putchar(a);
-				putchar(p);
+				putchar(b);
 				putchar(q);
 				if  (a == '7' && b == '8')
 				continue;
-				putchar('44');
+				putchar(44);
 				putchar(' ');
 			}
 		}
