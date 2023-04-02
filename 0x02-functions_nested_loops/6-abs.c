@@ -8,12 +8,12 @@
 
 int _abs(int c)
 {
-	int abs_val;
+	int absolute_val;
 
 	if (c < 0)
 	{
-		abs_val = c * -1;
-		return (abs_val);
+		absolute_val = c * -1;
+		return (absolute_val);
 	}
 	return (c);
 }
