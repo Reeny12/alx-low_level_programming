@@ -9,12 +9,13 @@
  */
 int main(void)
 {
-	char alph[26] = "zyxwvutsrqponmlkjihgfedcba";
-	int i;
+	char alphabet[26] = "zyxwvutsrqponmlkjihgfedcba";
+	int i = 0;
 
-	for (i = 0; i < 26; i++)
+	while (i < 26)
 	{
-		putchar(alph[i]);
+		putchar(alphabet[i]);
+		i++;
 	}
 	putchar('\n');
 	return (0);
