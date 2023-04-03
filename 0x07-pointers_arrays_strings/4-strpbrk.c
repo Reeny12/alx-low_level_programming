@@ -11,8 +11,7 @@ char *_strpbrk(char *s, char *accept)
 {
 	int a = 0;
 
-	while (*s)
-	{
+	do {
 		for (; accept[a]; a++)
 		{
 			if (*s == accept[a])
@@ -21,6 +20,6 @@ char *_strpbrk(char *s, char *accept)
 			}
 		}
 	s++;
-	}
-	return (0);
+	} while(*s);
+	return ('\0');
 }
