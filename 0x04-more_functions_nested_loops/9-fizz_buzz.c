@@ -9,27 +9,27 @@
 
 int main(void)
 {
-	int x;
+	int a;
 
-	for (x = 1; x <= 100; x++)
+	for (a = 1; a <= 'd'; a++)
 	{
-	if ((x % 3 == 0) && (x % 5 == 0))
+	if ((a % 3 == 0) && (a % 5 == 0))
 	{
 	printf("FizzBuzz");
 	}
-	else if (x % 3 == 0)
+	else if (a % 3 == 0)
 	{
 	printf("Fizz");
 	}
-	else if (x % 5 == 0)
+	else if (a % 5 == 0)
 	{
 	printf("Buzz");
 	}
 	else
 	{
-	printf("%d", x);
+	printf("%d", a);
 	}
-	if (x != 100)
+	if (a != 'd')
 	{
 	printf(" ");
 	}
