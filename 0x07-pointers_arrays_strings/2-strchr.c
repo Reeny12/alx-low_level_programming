@@ -1,0 +1,22 @@
+#include "main.h"
+
+/**
+ * _strchr - fill a block of memory with b
+ * @s: the adress of memory to be filled
+ * @c: the character to fill the memory with
+ * Return: s
+ */
+
+char *_strchr(char *s, char c)
+{
+	int i = 0;
+
+	for (; *s >= '\0'; i++)
+	{
+		if (*s == c)
+		{
+			return (s++);
+		}
+	}
+	return (NULL);
+}
