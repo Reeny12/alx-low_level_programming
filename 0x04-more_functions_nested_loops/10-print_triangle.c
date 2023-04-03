@@ -9,7 +9,8 @@
 
 void print_triangle(int size)
 {
-	int x, y, z;
+	int y, z;
+	int x = 0;
 
 	if (size <= 0)
 	{
@@ -17,7 +18,7 @@ void print_triangle(int size)
 	}
 	else
 	{
-	for (x = 0; x < size; x++)
+	while (x < size)
 	{
 	for (y = size - x; y > 1; y--)
 	{
@@ -28,6 +29,7 @@ void print_triangle(int size)
 	putchar(35);
 	}
 	putchar('\n');
+	x++;
 	}
 	}
 }
