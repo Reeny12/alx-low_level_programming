@@ -9,9 +9,9 @@
 
 void print_most_numbers(void)
 {
-	int x;
+	int x = 0;
 
-	for (x = 0; x <= 9; x++)
+	while (x <= 9)
 	{
 		if (x == 2 || x == 4)
 		{
@@ -21,6 +21,7 @@ void print_most_numbers(void)
 		{
 			putchar(x + '0');
 		}
+		x++;
 	}
 	putchar('\n');
 }
