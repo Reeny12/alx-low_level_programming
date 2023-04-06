@@ -1,5 +1,6 @@
 #include "main.h"
-
+#include <math.h>
+#include <stdlib.h>
 /**
  * _sqrt_recursion - returns th square roo of the number
  * @n: input
@@ -15,19 +16,18 @@ int _sqrt_recursion(int n)
 
 int _squareroot(int n, int x)
 {
-	int sqrt = x * x;
-        int a = _squareroot(n, x + 1);
+	int sroot = x * x;
 
-        if (sqrt > n)
+        if (sroot > n)
         {
                 return (-1);
         }
-        else if (sqrt == n)
+        else if (sroot == n)
         {
                 return (x);
         }
         else
         {
-                return (a);
+                return (_squareroot(n, x + 1));
         }
 }
