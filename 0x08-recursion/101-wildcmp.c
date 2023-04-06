@@ -12,9 +12,9 @@ int wildcmp(char *s1, char *s2)
 	char *a = s1 + 1;
 	char *b = s2 + 1;
 
-	if (*s1 == 42 && *a != '\0' && *s2 == '\0')
+	if (*s1 == '\0' && *s2 != '\0' && *s2 == 42)
 	{
-		return (0);
+		return (wildcmp(s1, b));
 	}
 	else if (*s1 == '\0' && *s2 == '\0')
 	{
