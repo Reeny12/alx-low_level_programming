@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * check_prime - check if the number is prime
+ * checker - check if the number is prime
  * @n:the number to be checked
  * @x: the number of iterations
  * Return: 1 for prime and 0 for composite
