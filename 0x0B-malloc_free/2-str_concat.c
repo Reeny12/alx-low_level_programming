@@ -16,10 +16,8 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 		s1 = "";
-	else if (s2 == NULL)
-	{
+	if (s2 == NULL)
 		s2 = "";
-	}
 
 	while (s1[a])
 	{
@@ -39,15 +37,16 @@ char *str_concat(char *s1, char *s2)
 
 	b = 0;
 
-	for (k = 0; k < l; k++)
+	while (k < l)
 	{
 		if (k <= a)
 			s[k] = s1[k];
-		else if (k >= a)
+		if (k >= a)
 		{
 			s[k] = s2[b];
 			b++;
 		}
+		k++;
 	}
 	s[k] = '\0';
 	return (s);
