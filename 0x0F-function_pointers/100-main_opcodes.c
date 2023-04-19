@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * main - ...
+ * @argc: ...
+ * @argv: ...
+ * Return: 0
+ */
+
+int main (int argc, char *argv[])
+{
+	int byte i;
+	char *bulk;
+
+	if (argc != 2)
+	{
+		printf("Error\n");
+		exit(1);
+	}
+	bytes == atoi(argv[1]);
+
+	if (byte < 0)
+	{
+		printf("Error\n");
+		exit(2);
+	}
+
+	bulk = (char *)main;
+	while (i < bytes)
+	{
+		if (i == bytes - 1)
+		{
+			printf("%02hhx ", bulk[i]);
+		}
+		i++;
+	}
+	return (0);
+}
