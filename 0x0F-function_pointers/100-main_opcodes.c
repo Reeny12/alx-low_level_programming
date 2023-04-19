@@ -27,14 +27,13 @@ int main(int argc, char *argv[])
 	}
 
 	bulk = (char *)main;
-	while (i < byte)
+	for (; i < byte; i++)
 	{
 		if (i == byte - 1)
 		{
 			printf("%02hhx ", bulk[i]);
 			break;
 		}
-		i++;
 	}
 	return (0);
 }
