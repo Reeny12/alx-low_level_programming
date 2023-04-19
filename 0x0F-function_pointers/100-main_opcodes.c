@@ -18,7 +18,7 @@ int main (int argc, char *argv[])
 		printf("Error\n");
 		exit(1);
 	}
-	bytes == atoi(argv[1]);
+	byte == atoi(argv[1]);
 
 	if (byte < 0)
 	{
@@ -27,9 +27,9 @@ int main (int argc, char *argv[])
 	}
 
 	bulk = (char *)main;
-	while (i < bytes)
+	while (i < byte)
 	{
-		if (i == bytes - 1)
+		if (i == byte - 1)
 		{
 			printf("%02hhx ", bulk[i]);
 		}
