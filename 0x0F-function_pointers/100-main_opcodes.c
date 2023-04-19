@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 	}
 
 	bulk = (char *)main;
-	while (i < byte)
+	for (; i < byte; i++)
 	{
 		if (i == byte - 1)
 		{
@@ -35,7 +35,6 @@ int main(int argc, char *argv[])
 			break;
 		}
 		printf("%02hhx ", bulk[i]);
-		i++;
 	}
 	return (0);
 }
