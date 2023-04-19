@@ -32,6 +32,7 @@ int main(int argc, char *argv[])
 		if (i == byte - 1)
 		{
 			printf("%02hhx ", bulk[i]);
+			break;
 		}
 		i++;
 	}
