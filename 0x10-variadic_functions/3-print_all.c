@@ -29,19 +29,19 @@ void print_all(const char * const format, ...)
 		switch (format[i])
 		{
 			case 'c':
-				printf("%c", va_arg(lis, int)), c = 1;
+				printf("%c", va_arg(lis, int)), k = 1;
 				break;
 			case 'i':
-				printf("%d", va_arg(lis, int)), c = 1;
+				printf("%d", va_arg(lis, int)), k = 1;
 				break;
 			case 'f':
-				printf("%f", va_arg(lis, double)), c = 1;
+				printf("%f", va_arg(lis, double)), k = 1;
 				break;
 			case 's':
-				str = va_arg(lis, char *), c = 1;
+				str = va_arg(lis, char *), k = 1;
 				if (!str)
 				{
-					printf("nill");
+					printf("(nill)");
 					break;
 				}
 				printf("%s", str);
